@@ -18,6 +18,7 @@ eth-hash==0.7.0
 eth-keyfile==0.8.1
 eth-keys==0.5.1
 eth-rlp==2.1.0
+eth-tester==0.12.0b1
 eth-typing==5.0.0
 eth-utils==5.0.0
 eth_abi==5.1.0
@@ -37,6 +38,7 @@ pyunormalize==16.0.0
 regex==2024.9.11
 requests==2.32.3
 rlp==4.0.1
+semantic-version==2.10.0
 setuptools==70.0.0
 sqlparse==0.4.4
 toolz==0.12.1

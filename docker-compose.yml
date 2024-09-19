@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./server:/app  # Mounts the Django app directory for live reload
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    command: yarn start
+    volumes:
+      - ./client:/app  # Mounts the React app directory for live reload
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
