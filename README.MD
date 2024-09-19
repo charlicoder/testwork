@@ -72,3 +72,10 @@ Note:
 2. After login, the homepage must show the balance of the user's Ethereum wallet address.
 
 Commit your code to your personal git and share the link.
+
+## Test work is done
+- I added Dockerfiles and docker-compose.yml files for easy and quick dev environment setup. You can now just run following command to run & up both the client and server applications at the same time and do development work. Any changes in the file will be updated live.
+```
+$ docker compose up --buil
+```
+- I did just the minimum work to complete the task. For ethereum balance check i used testnet.

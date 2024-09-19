@@ -5,7 +5,7 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile
-    command: python manage.py runserver 0.0.0.0:8000
+    command: ["sh", "/server/entrypoint.sh"]
     volumes:
       - ./server:/app  # Mounts the Django app directory for live reload
     ports:
