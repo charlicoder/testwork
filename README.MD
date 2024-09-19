@@ -76,7 +76,7 @@ Commit your code to your personal git and share the link.
 ## Test work is done
 - I added Dockerfiles and docker-compose.yml files for easy and quick dev environment setup. You can now just run following command to run & up both the client and server applications at the same time and do development work. Any changes in any files will be updated live.
 ```
-$ docker compose up --buil
+$ docker compose up --build -d
 ```
 - I just did the minimum work to complete the task. There might be many other places where we can do optimizatinos and implement automation scripts.
 - For ethereum balance check i used EthereumTesterProvider for quick response to your task.
