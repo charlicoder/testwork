@@ -78,5 +78,5 @@ Commit your code to your personal git and share the link.
 ```
 $ docker compose up --build -d
 ```
-- I just did the minimum work to complete the task. There might be many other places where we can do optimizatinos and implement automation scripts.
+- I just did the minimum work to complete the task. There might be many other places where we can do optimizations and implement scripts for automation.
 - For ethereum balance check i used EthereumTesterProvider for quick response to your task.
