@@ -43,6 +43,7 @@ class User(AbstractBaseUser):
     email = models.EmailField(null=False, blank=False, unique=True)
     first_name = models.CharField(max_length=50, blank=False, null=False, default='Default first name')
     last_name = models.CharField(max_length=50, blank=False, null=False, default='Default last name')
+    ethereum_wallet_address = models.CharField(max_length=42, blank=True, null=True)
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
@@ -53,7 +54,7 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'ethereum_wallet_address']
 
     def __str__(self):
         return self.email
